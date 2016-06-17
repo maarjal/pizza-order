@@ -9,6 +9,32 @@
     <title>Pizza Order</title>
   </head>
   <body>
-
+    <div class="container">
+      <h1>Order Pizza</h1>
+      <form id="pizza-order" class="form-group">
+        <div class="form-group">
+          <label for="pizza-size">Select a size</label>
+          <select id="pizza-size">
+            <option>Family size</option>
+            <option>Medium</option>
+            <option>Small</option>
+          </select>
+        </div>
+        <div id="pizza-topping" class="form-group">
+          <label for="topping">Select toppings</label>
+          <br>
+          <input type="checkbox" name="topping" value="cheese"> Cheese<br>
+          <input type="checkbox" name="topping" value="pizza sauce"> Pizza Sauce<br>
+          <input type="checkbox" name="topping" value="green pepper"> Green Pepper<br>
+          <input type="checkbox" name="topping" value="vegan pepperoni"> Vegan Pepperoni<br>
+          <input type="checkbox" name="topping" value="artichoke"> Artichoke<br>
+          <input type="checkbox" name="topping" value="anchovy"> Anchovy<br>
+        </div>
+        <button id="order" class="btn" type="submit" name="button">Order</button>
+      </form>
+      <div id="result">
+        <p>Thank you for your order! Your <span class="pizza-size"> size pizza with <span class="pizza-topping"> will cost: <span class="pizza-price"></span>$</p>
+      </div>
+    </div>
   </body>
 </html>
