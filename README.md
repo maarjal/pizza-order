@@ -10,15 +10,21 @@ A user can choose one or more individual toppings for their pizza (cheese, peppe
 
 ## Specifications
 
-* User can choose pizza size
+* User can choose pizza by size
   * Example Input: Medium
-  * Example Output: Your "medium" size pizza will cost:
-* User can choose toppings for pizza
+  * Example Output: You ordered a "medium" pizza.
+* User can choose topping for pizza
   * Example Input: Cheese
-  * Example Output: Your "medium" size pizza with "cheese" will cost:
+  * Example Output: You ordered a "medium" size pizza with "cheese".
+* User can choose many toppings for pizza
+  * Example Input: Cheese, Vegan Pepperoni
+  * Example Output: You ordered a "medium" size pizza with "cheese", "vegan pepperoni".
 * User can see the price for their pizza
     * Example Input: Medium (pizza size)
-    * Example Output: Your "medium" size pizza with "cheese" will cost: 15$.
+    * Example Output: You ordered a "medium" size pizza with "cheese". Order total: 15$.
+* User can view order details when clicking on a link
+    * Example Input: "View order"
+    * Example Output: You ordered a "medium" size pizza with "cheese". Order total: 15$.
 
 ## Setup/Installation Requirements
 
