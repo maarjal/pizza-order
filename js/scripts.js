@@ -25,10 +25,11 @@ $(document).ready(function() {
     var newPizza = new Pizza(pizzaSize, pizzaToppings);
     newPizza.pizzaPrice();
     pizzaToppings.forEach(function(topping) {
-      $(".pizza-topping").append("<li>" + topping + "</li>");
+      $(".pizza-topping").append("<li>" + topping + "</li>").css("font-weight", "bold");
     });
-    $(".pizza-size").text(newPizza.pizzaSize.toLowerCase());
-    $(".pizza-price").text(newPizza.price);
+    $(".pizza-size").text(newPizza.pizzaSize.toLowerCase()).css("font-weight", "bold");
+    $(".pizza-price").text(newPizza.price).css("font-weight", "bold");
+    $("form").slideToggle();
     $("#result").show();
   });
 });
