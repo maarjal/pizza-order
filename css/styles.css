@@ -4,15 +4,6 @@ body {
   background-color: #EDEBD7;
 }
 
-#result, #details {
-  display: none;
-}
-
-.details {
-  cursor: pointer;
-  color: #4A88E0;
-}
-
 .jumbotron {
   text-align: center;
   background: url("../img/cover.png") repeat center;
@@ -20,7 +11,6 @@ body {
   font-weight: bold;
   padding: 10%;
   opacity: 0.9;
-
 }
 
 h2 {
@@ -34,4 +24,14 @@ h2 {
 
 .order {
   width: 50%;
+}
+
+#result, #details {
+  display: none;
+}
+
+.details {
+  cursor: pointer;
+  color: #4A88E0;
+  text-decoration: underline;
 }

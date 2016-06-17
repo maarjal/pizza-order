@@ -9,8 +9,9 @@ Pizza.prototype.pizzaPrice = function() {
     return this.price -= 2;
   } else if (this.pizzaSize === "Small") {
     return this.price -= 6;
-  } else
-  return this.price;
+  } else {
+    return this.price;
+  }
 }
 
 $(document).ready(function() {
