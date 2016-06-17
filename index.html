@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Fugaz+One' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
     <script src="js/jquery-1.12.4.js"></script>
@@ -11,34 +12,48 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-          <h2>Order below</h2>
+        <h2>Order below</h2>
       </div>
-      <form id="pizza-order" class="form-group">
-        <div class="form-group">
-          <label for="pizza-size">Select a size</label>
-          <select id="pizza-size">
-            <option>Family size</option>
-            <option>Medium</option>
-            <option>Small</option>
-          </select>
-        </div>
-        <div id="pizza-topping" class="form-group">
-          <label for="topping">Select toppings</label>
-          <br>
-          <input type="checkbox" name="topping" value="cheese"> Cheese<br>
-          <input type="checkbox" name="topping" value="pizza sauce"> Pizza Sauce<br>
-          <input type="checkbox" name="topping" value="green pepper"> Green Pepper<br>
-          <input type="checkbox" name="topping" value="vegan pepperoni"> Vegan Pepperoni<br>
-          <input type="checkbox" name="topping" value="artichoke"> Artichoke<br>
-          <input type="checkbox" name="topping" value="anchovy"> Anchovy<br>
-        </div>
-        <button id="order" class="btn" type="submit" name="button">Order</button>
-      </form>
-      <div id="result">
-        <span>Thank you for your order! Your <span class="pizza-size"></span> pizza with:</span>
+      <div class="container order">
+        <form id="pizza-order" class="form-group">
+          <div class="form-group">
+            <label for="pizza-size">Select a size</label>
+            <select id="pizza-size" class="form-control">
+              <option>Family size</option>
+              <option>Medium</option>
+              <option>Small</option>
+            </select>
+          </div>
+          <div id="pizza-topping">
+            <label for="topping">Select toppings</label>
+            <div class="checkbox">
+              <label><input type="checkbox" name="topping" value="cheese"> Cheese</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="topping" value="pizza sauce"> Pizza Sauce</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="topping" value="green pepper"> Green Pepper</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="topping" value="vegan pepperoni"> Vegan Pepperoni</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="topping" value="artichoke"> Artichoke</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="topping" value="anchovy"> Anchovy</label>
+            </div>
+          </div>
+          <button id="order" class="btn" type="submit" name="button">Order</button>
+        </form>
+        <div id="result">
+          <span>Thank you for your order! Your <span class="pizza-size"></span> pizza with:</span>
           <ul class="pizza-topping"></ul>
           <p>will cost: <span class="pizza-price"></span>$</p>
+        </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
 </html>

@@ -8,11 +8,19 @@
   text-transform: uppercase;
   font-weight: bold;
   padding: 10%;
+  opacity: 0.9;
+
 }
 
 h2 {
-
-  top: 100px;
-
+  color: #B7434D;
+  font-family: 'Fugaz One', cursive;
+  text-decoration: underline;
+  font-weight: bold;
+  padding-top: 10%;
   position: relative;
+}
+
+.order {
+  width: 50%;
 }
