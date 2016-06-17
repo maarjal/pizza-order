@@ -1,11 +1,16 @@
 body {
   font-family: 'Work Sans', sans-serif;
-  font-size: 1.7em;
+  font-size: 2em;
   background-color: #EDEBD7;
 }
 
-#result {
+#result, #details {
   display: none;
+}
+
+.details {
+  cursor: pointer;
+  color: #4A88E0;
 }
 
 .jumbotron {

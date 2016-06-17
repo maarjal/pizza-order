@@ -45,12 +45,17 @@
               <label><input type="checkbox" name="topping" value="anchovy"> Anchovy</label>
             </div>
           </div>
-          <button id="order" class="btn" type="submit" name="button">Order</button>
+          <button id="order" class="btn btn-lg btn-default" type="submit" name="button">Order</button>
         </form>
         <div id="result">
-          <span>Thank you for your order! Your <span class="pizza-size"></span> pizza with:</span>
+          <span>Thank you for your order!</span>
+          <br>
+          <span class="details">View order</span>
+        </div>
+        <div id="details">
+          You ordered a <span class="pizza-size"></span> pizza with:</span>
           <ul class="pizza-topping"></ul>
-          <p>will cost: <span class="pizza-price"></span>$</p>
+          <p>Order total: <span class="pizza-price"></span>$</p>
         </div>
       </div>
     </div>

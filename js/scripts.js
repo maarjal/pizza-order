@@ -14,7 +14,7 @@ Pizza.prototype.pizzaPrice = function() {
 }
 
 $(document).ready(function() {
-  
+
   $("form#pizza-order").submit(function(event) {
     event.preventDefault();
     $("ul").empty();
@@ -25,12 +25,18 @@ $(document).ready(function() {
     });
     var newPizza = new Pizza(pizzaSize, pizzaToppings);
     newPizza.pizzaPrice();
-    pizzaToppings.forEach(function(topping) {
-      $(".pizza-topping").append("<li>" + topping + "</li>").css("font-weight", "bold");
-    });
-    $(".pizza-size").text(newPizza.pizzaSize.toLowerCase()).css("font-weight", "bold");
-    $(".pizza-price").text(newPizza.price).css("font-weight", "bold");
+
     $("form").slideToggle();
     $("#result").show();
+
+    $(".details").last().click(function() {
+      $(".details").hide();
+      pizzaToppings.forEach(function(topping) {
+        $(".pizza-topping").append("<li>" + topping + "</li>").css("font-weight", "bold");
+      });
+      $(".pizza-size").text(newPizza.pizzaSize.toLowerCase()).css("font-weight", "bold");
+      $(".pizza-price").text(newPizza.price).css("font-weight", "bold");
+      $("#details").show();
+    });
   });
 });
