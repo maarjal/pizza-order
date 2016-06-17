@@ -1,3 +1,18 @@
 #result {
   display: none;
 }
+
+.jumbotron {
+  text-align: center;
+  background: url("../img/cover.png") repeat center;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10%;
+}
+
+h2 {
+
+  top: 100px;
+
+  position: relative;
+}
