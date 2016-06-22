@@ -5,6 +5,9 @@ function Pizza(pizzaSize, pizzaToppings) {
 }
 
 Pizza.prototype.pizzaPrice = function() {
+  if (this.pizzaToppings.length >= 3) {
+    this.price += 3;
+  }
   if (this.pizzaSize === "Medium") {
     return this.price -= 2;
   } else if (this.pizzaSize === "Small") {
