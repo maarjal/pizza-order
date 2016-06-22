@@ -10,55 +10,55 @@
     <title>Pizza Order</title>
   </head>
   <body>
-    <div class="container">
-      <div class="jumbotron">
-        <h2>Order below</h2>
-      </div>
-      <div class="container order">
-        <form id="pizza-order" class="form-group">
-          <div class="form-group">
-            <label for="pizza-size">Select a size</label>
-            <select id="pizza-size" class="form-control">
-              <option>Family size</option>
-              <option>Medium</option>
-              <option>Small</option>
-            </select>
-          </div>
-          <div id="pizza-topping">
-            <label for="topping">Select toppings</label>
-            <div class="checkbox">
-              <label><input type="checkbox" name="topping" value="cheese">Cheese</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" name="topping" value="pizza sauce">Pizza Sauce</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" name="topping" value="green pepper">Green Pepper</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" name="topping" value="vegan pepperoni">Vegan Pepperoni</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" name="topping" value="artichoke">Artichoke</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" name="topping" value="anchovy">Anchovy</label>
-            </div>
-          </div>
-          <button id="order" class="btn btn-lg btn-default" type="submit" name="button">Order <span class="glyphicon glyphicon-piggy-bank"></span></button>
-        </form>
-        <div id="result">
-          <span>Thank you for your order!</span>
-          <br>
-          <span class="details">View order</span>
+      <div class="container">
+        <div class="jumbotron">
+          <h2>Order below</h2>
         </div>
-        <div id="details">
-          You ordered a <span class="pizza-size"></span> pizza with:</span>
-          <ul class="pizza-topping"></ul>
-          <p>Order total: <span class="pizza-price"></span>$</p>
+        <div class="container order">
+          <form id="pizza-order" class="form-group">
+            <div class="form-group">
+              <label for="pizza-size">Select a size</label>
+              <select id="pizza-size" class="form-control">
+                <option>Family size</option>
+                <option>Medium</option>
+                <option>Small</option>
+              </select>
+            </div>
+            <div id="pizza-topping">
+              <label for="topping">Select toppings</label>
+              <div class="checkbox">
+                <label><input type="checkbox" name="topping" value="cheese">Cheese</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="topping" value="pizza sauce">Pizza Sauce</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="topping" value="green pepper">Green Pepper</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="topping" value="vegan pepperoni">Vegan Pepperoni</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="topping" value="artichoke">Artichoke</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="topping" value="anchovy">Anchovy</label>
+              </div>
+            </div>
+            <button id="order" class="btn btn-lg btn-default" type="submit" name="button">Order <span class="glyphicon glyphicon-piggy-bank"></span></button>
+          </form>
+          <div id="result">
+            <span>Thank you for your order!</span>
+            <br>
+            <span class="details">View order</span>
+          </div>
+          <div id="details">
+            You ordered a <span class="pizza-size"></span> pizza with:</span>
+            <ul class="pizza-topping"></ul>
+            <p>Order total: <span class="pizza-price"></span>$</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
